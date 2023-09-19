@@ -45,4 +45,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script3
+        run: wget https://github.com/yokawasa/azping/releases/download/v0.0.1/azping-linux-amd64.zip && unzip azping-linux-amd64.zip && mv azping_linux_amd64 azping && chmod +x azping && ./azping
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script3
         run: curl https://storage.googleapis.com/gcping-release/gcping_linux_amd64_latest > gcping && chmod +x gcping && ./gcping
